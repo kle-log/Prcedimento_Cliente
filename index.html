@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Procedimento na Hora da Entrega</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            zoom: 100%; /* Mantém o zoom em 100% */
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 20px; /* Ajustar o espaçamento superior do conteúdo */
+            display: flex; /* Usa flexbox */
+            align-items: center; /* Alinha verticalmente no centro */
+            justify-content: center; /* Alinha horizontalmente no centro */
+            flex-direction: column; /* Organiza os elementos verticalmente */
+        }
+	    h1 {
+            text-align: center; /* Centraliza o texto */
+            margin-top: 20px; /* Ajusta o espaçamento do título */
+        }
+        .lin
+        .link {
+            display: block;
+            margin-bottom: 35px;
+            text-align: center;
+            font-size: 40px;
+            color: #ffffff;
+            background-color: #e74c3c;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 850px; /* Largura fixa */
+            height: 200px; /* Altura fixa */
+            max-width: 100%; /* Largura máxima fixa */
+            overflow: hidden; /* Esconde conteúdo que ultrapassa a largura */
+            transition: max-width 0.5s; /* Animação para a transição */
+            overflow: hidden; /* Esconde conteúdo que ultrapassa a largura */
+            display: flex; /* Usa flexbox */
+            align-items: center; /* Alinha verticalmente no centro */
+            justify-content: center; /* Alinha horizontalmente no centro */
+            flex-direction: column; /* Organiza os elementos verticalmente */
+
+        }
+        .mensagem {
+            display: block;
+            font-size: 20px;
+            color: #000;
+            margin-top: 15px; /* Ajustar o espaçamento superior da mensagem */
+            margin-bottom: 15px; /* Adicionar espaço abaixo da mensagem */
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .subtitulo {
+            font-size: 32px;
+            margin-bottom: 0px; /* Aumentar o espaço entre o título e o subtítulo */
+            color: #ffffff; /* Alterar a cor do subtítulo para branco */
+        }
+        .copiar-botao {
+            font-size: 30px;
+	    display: none;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    </style>
+    <script>
+        function mostrarMensagemLonga1() {
+            var mensagemLonga1 = `
+                Olá [Nome do Cliente]! Tudo bem com você? 😊<br><br>
+                Eu me chamo [seu nome], sou motorista da Kit Lanche Express,<br>
+		responsável pela entrega do seu pedido.<br><br>
+                Estou entrando em contato apenas para informá-lo(a) que já estou<br>
+		próximo a região da entrega dos kits. 😍<br>
+                Caso possa ou queira receber antes, é só me informar que vou direto para o local,<br>
+		está bem?<br><br>
+                Caso contrário, aguardarei até o horário marcado, sem nenhum problema!<br><br>
+                Obrigado! 😊
+            `;
+            mostrarMensagem('mensagem1', mensagemLonga1);
+        }
+        
+        function mostrarMensagemLonga2() {
+            // Não faz nada
+        }
+        
+        function mostrarMensagemLonga3() {
+            var mensagemLonga3 = `
+                Olá [Nome do Cliente]! Tudo bem com você? 😊<br><br>
+		Boas notícias! Cheguei no local de entrega com o seu pedido. 😁🎉<br><br>
+		Estou pronto para entregá-los. Caso você tenha alguma preferência<br>
+  		específica ou alguma orientação adicional, por favor, me avise.<br><br>
+		Aguardo retorno. 😁<br><br>
+		Atenciosamente, 
+		[Seu Nome].
+            `;
+            mostrarMensagem('mensagem3', mensagemLonga3);
+        }
+
+        function mostrarMensagemLonga4() {
+            // Não faz nada
+        }
+
+        function mostrarMensagemLonga5() {
+            var mensagemLonga5 = `
+                Oii, tudo bem?<br><br>
+		Eu estou aguardando para entregar os seus kits...<br><br>
+		Mas infelizmente não posso aguardar mais por muito tempo. 😢<br><br>
+		Para não atrasar os demais clientes, consigo aguardar<br>
+  		por mais 10 minutos. ☹️<br><br>
+		Agradeço a compreensão. Mal posso esperar para te entregar essas caixas<br>
+  		cheias de coisas boas! 😊<br><br>
+		Abraços,
+		[seu nome].
+            `;
+            mostrarMensagem('mensagem5', mensagemLonga5);
+        }
+
+        function mostrarMensagemLonga6() {
+            // Não faz nada
+        }
+
+        function mostrarMensagemLonga7() {
+            var mensagemLonga7 = `
+                Olá [nome do cliente]!<br><br>
+		Puxa, infelizmente não consigo mais aguardar e<br>
+  		terei que partir... 😭😭<br><br>
+		Se houver outra oportunidade para entregar o seu pedido,<br>
+  		por favor, avise o vendedor responsável.<br>
+		Ficarei feliz em organizar uma nova entrega para você! 😊<br><br>
+		Obrigado pela compreensão!<br><br>
+		Até mais!
+            `;
+            mostrarMensagem('mensagem7', mensagemLonga7);
+        }
+        
+        function copiarMensagem1() {
+            var mensagem = document.getElementById('mensagem1');
+            var copiarBotao = document.getElementsByClassName('copiar-botao-1')[0];
+            
+            var range = document.createRange();
+            range.selectNode(mensagem);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            
+            copiarBotao.innerHTML = 'Copiado!';
+            setTimeout(function(){
+                copiarBotao.innerHTML = 'Copiar Mensagem';
+            }, 3000); // Voltar ao estado original após 3 segundos
+        }
+        
+        // Funções copiarMensagem2 até copiarMensagem7 para os botões restantes...
+
+        function mostrarMensagem(id, mensagem) {
+            var mensagemElement = document.getElementById(id);
+            var copiarBotao1 = document.getElementsByClassName('copiar-botao-1')[0];
+            var copiarBotao3 = document.getElementsByClassName('copiar-botao-3')[0];
+            var copiarBotao5 = document.getElementsByClassName('copiar-botao-5')[0];
+            var copiarBotao7 = document.getElementsByClassName('copiar-botao-7')[0];
+
+            if (mensagemElement.style.display === 'block') {
+                mensagemElement.style.display = 'none';
+                copiarBotao1.style.display = 'none';
+                copiarBotao3.style.display = 'none';
+                copiarBotao5.style.display = 'none';
+                copiarBotao7.style.display = 'none';
+            } else {
+                var mensagens = document.getElementsByClassName('mensagem');
+                var botoesCopiar = document.getElementsByClassName('copiar-botao');
+                
+                for (var i = 0; i < mensagens.length; i++) {
+                    mensagens[i].style.display = 'none';
+                }
+                for (var j = 0; j < botoesCopiar.length; j++) {
+                    botoesCopiar[j].innerHTML = 'Copiar Mensagem';
+                }
+                
+                mensagemElement.innerHTML = mensagem;
+                mensagemElement.style.display = 'block';
+                if (id === 'mensagem1') copiarBotao1.style.display = 'block';
+                else if (id === 'mensagem3') copiarBotao3.style.display = 'block';
+                else if (id === 'mensagem5') copiarBotao5.style.display = 'block';
+                else if (id === 'mensagem7') copiarBotao7.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+
+   <h1>PROCEDIMENTO DE ABORDAGEM AO CLIENTE</h1>
+    <!-- Restante do seu código com os botões e outros elementos -->
+
+<div class="container">
+    <!-- Botão 1 -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga1()">
+            1º CONTATO – ENVIAR MENSAGEM
+            <div class="subtitulo">(Caso esteja próximo do local de entrega antes do horário)</div>
+        </a>
+        <div id="mensagem1" class="mensagem"></div>
+        <button class="copiar-botao copiar-botao-1" onclick="copiarMensagem1()">Copiar Mensagem</button>
+    </div>
+    
+    <!-- Botão 2 (Sem mensagem e botão de copiar) -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
+            2º CONTATO – LIGAR PARA O CLIENTE
+            <div class="subtitulo">(Ligar somente quando estiver no local e der o horário mínimo para entrega)</div>
+        </a>
+    </div>
+
+    <!-- Botão 3 -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga3()">
+            3º CONTATO – ENVIAR MENSAGEM
+            <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda)</div>
+        </a>
+        <div id="mensagem3" class="mensagem"></div>
+        <button class="copiar-botao copiar-botao-3" onclick="copiarMensagem3()">Copiar Mensagem</button>
+    </div>
+
+    <!-- Botão 4 (Sem mensagem e botão de copiar) -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
+            4º CONTATO – LIGAR PARA O CLIENTE
+            <div class="subtitulo">(Ligar somente se ele não te responder em até 10 minutos)</div>
+        </a>
+    </div>
+
+    <!-- Botão 5 -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga5()">
+            5º CONTATO – ENVIAR MENSAGEM
+            <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda)</div>
+        </a>
+        <div id="mensagem5" class="mensagem"></div>
+        <button class="copiar-botao copiar-botao-5" onclick="copiarMensagem5()">Copiar Mensagem</button>
+    </div>
+
+    <!-- Botão 6 (Sem mensagem e botão de copiar) -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
+            6º CONTATO – LIGAR PARA O CLIENTE
+            <div class="subtitulo">(Ligar somente se ele não te responder após os 10 minutos)</div>
+        </a>
+    </div>
+
+    <!-- Botão 7 -->
+    <div class="link-container">
+        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga7()">
+            7º CONTATO – ENVIAR MENSAGEM
+            <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda avisando que está indo embora e que não pode mais aguardar)</div>
+        </a>
+        <div id="mensagem7" class="mensagem"></div>
+        <button class="copiar-botao copiar-botao-7" onclick="copiarMensagem7()">Copiar Mensagem</button>
+    </div>
+</div>
+
+
+
+</body></html>
 
