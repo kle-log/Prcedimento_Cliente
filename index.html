@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0137)file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <title>Procedimento na Hora da Entrega</title>
     <style>
         /* Estilos CSS */
@@ -20,15 +20,15 @@
             justify-content: center; /* Alinha horizontalmente no centro */
             flex-direction: column; /* Organiza os elementos verticalmente */
         }
-	    h1 {
+        h1 {
             text-align: center; /* Centraliza o texto */
             margin-top: 20px; /* Ajusta o espaçamento do título */
         }
         .link {
             display: block;
-            margin-bottom: 35px;
+            margin-bottom: 10px;
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
             color: #ffffff;
             background-color: #e74c3c;
             padding: 15px 20px;
@@ -48,23 +48,27 @@
 
         }
         .mensagem {
-            display: block;
+            display: none;
             font-size: 20px;
             color: #000;
             margin-top: 15px; /* Ajustar o espaçamento superior da mensagem */
-            margin-bottom: 15px; /* Adicionar espaço abaixo da mensagem */
+            margin-bottom: 15px; /* Adicionar espaço abaiaxo da mensagem */
             text-align: left;
             border: 1px solid #ccc;
             padding: 10px;
         }
+        .logo {
+            width: 150px;
+            margin-bottom: -80px;
+            margin-top: 20px; /* Ajustar o espaçamento superior da logo */
+        }
         .subtitulo {
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 0px; /* Aumentar o espaço entre o título e o subtítulo */
             color: #ffffff; /* Alterar a cor do subtítulo para branco */
         }
         .copiar-botao {
-            font-size: 30px;
-	    display: none;
+            display: none;
             margin-top: 10px;
             padding: 8px 12px;
             background-color: #3498db;
@@ -77,12 +81,9 @@
         function mostrarMensagemLonga1() {
             var mensagemLonga1 = `
                 Olá [Nome do Cliente]! Tudo bem com você? 😊<br><br>
-                Eu me chamo [seu nome], sou motorista da Kit Lanche Express,<br>
-		responsável pela entrega do seu pedido.<br><br>
-                Estou entrando em contato apenas para informá-lo(a) que já estou<br>
-		próximo a região da entrega dos kits. 😍<br>
-                Caso possa ou queira receber antes, é só me informar que vou direto para o local,<br>
-		está bem?<br><br>
+                Eu me chamo [seu nome], sou motorista da Kit Lanche Express, responsável pela entrega do seu pedido.<br><br>
+                Estou entrando em contato apenas para informá-lo(a) que já estou próximo a região da entrega dos kits. 😍<br>
+                Caso possa ou queira receber antes, é só me informar que vou direto para o local, está bem?<br><br>
                 Caso contrário, aguardarei até o horário marcado, sem nenhum problema!<br><br>
                 Obrigado! 😊
             `;
@@ -97,8 +98,8 @@
             var mensagemLonga3 = `
                 Olá [Nome do Cliente]! Tudo bem com você? 😊<br><br>
 		Boas notícias! Cheguei no local de entrega com o seu pedido. 😁🎉<br><br>
-		Estou pronto para entregá-los. Caso você tenha alguma preferência<br>
-  		específica ou alguma orientação adicional, por favor, me avise.<br><br>
+		Estou pronto para entregá-los. Caso você tenha alguma preferência específica<br> 
+		ou alguma orientação adicional, por favor, me avise.<br><br>
 		Aguardo retorno. 😁<br><br>
 		Atenciosamente, 
 		[Seu Nome].
@@ -115,10 +116,8 @@
                 Oii, tudo bem?<br><br>
 		Eu estou aguardando para entregar os seus kits...<br><br>
 		Mas infelizmente não posso aguardar mais por muito tempo. 😢<br><br>
-		Para não atrasar os demais clientes, consigo aguardar<br>
-  		por mais 10 minutos. ☹️<br><br>
-		Agradeço a compreensão. Mal posso esperar para te entregar essas caixas<br>
-  		cheias de coisas boas! 😊<br><br>
+		Para não atrasar os demais clientes, consigo aguardar por mais 10 minutos. ☹️<br><br>
+		Agradeço a compreensão. Mal posso esperar para te entregar essas caixas cheias de coisas boas! 😊<br><br>
 		Abraços,
 		[seu nome].
             `;
@@ -132,10 +131,8 @@
         function mostrarMensagemLonga7() {
             var mensagemLonga7 = `
                 Olá [nome do cliente]!<br><br>
-		Puxa, infelizmente não consigo mais aguardar e<br>
-  		terei que partir... 😭😭<br><br>
-		Se houver outra oportunidade para entregar o seu pedido,<br>
-  		por favor, avise o vendedor responsável.<br>
+		Puxa, infelizmente não consigo mais aguardar e terei que partir... 😭😭<br><br>
+		Se houver outra oportunidade para entregar o seu pedido, por favor, avise o vendedor responsável.<br>
 		Ficarei feliz em organizar uma nova entrega para você! 😊<br><br>
 		Obrigado pela compreensão!<br><br>
 		Até mais!
@@ -198,14 +195,15 @@
 </head>
 <body>
 
-   <h1>PROCEDIMENTO DE ABORDAGEM AO CLIENTE</h1>
+    <img src="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/8.%20Marketing/Artes/Logotipo%20Final/LogotipoVermelho%20-%20Fundo%20Transparente.png" alt="Sua Logo" class="logo"> <!-- Substitua "URL_DA_SUA_IMAGEM" pelo link online da sua logo -->
+    <h1>PROCEDIMENTO DE ABORDAGEM AO CLIENTE</h1>
     <!-- Restante do seu código com os botões e outros elementos -->
 
 <div class="container">
     <!-- Botão 1 -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga1()">
-            1º CONTATO – ENVIAR MENSAGEM
+        <a href="#" class="link" onclick="mostrarMensagemLonga1()">
+            1º CONTATO – Enviar mensagem
             <div class="subtitulo">(Caso esteja próximo do local de entrega antes do horário)</div>
         </a>
         <div id="mensagem1" class="mensagem"></div>
@@ -214,16 +212,16 @@
     
     <!-- Botão 2 (Sem mensagem e botão de copiar) -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
-            2º CONTATO – LIGAR PARA O CLIENTE
+        <a href="#" class="link">
+            2º CONTATO – Ligar para o Cliente
             <div class="subtitulo">(Ligar somente quando estiver no local e der o horário mínimo para entrega)</div>
         </a>
     </div>
 
     <!-- Botão 3 -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga3()">
-            3º CONTATO – ENVIAR MENSAGEM
+        <a href="#" class="link" onclick="mostrarMensagemLonga3()">
+            3º CONTATO – Enviar mensagem
             <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda)</div>
         </a>
         <div id="mensagem3" class="mensagem"></div>
@@ -232,16 +230,16 @@
 
     <!-- Botão 4 (Sem mensagem e botão de copiar) -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
-            4º CONTATO – LIGAR PARA O CLIENTE
+        <a href="#" class="link">
+            4º CONTATO – Ligar novamente para o Cliente
             <div class="subtitulo">(Ligar somente se ele não te responder em até 10 minutos)</div>
         </a>
     </div>
 
     <!-- Botão 5 -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga5()">
-            5º CONTATO – ENVIAR MENSAGEM
+        <a href="#" class="link" onclick="mostrarMensagemLonga5()">
+            5º CONTATO – Enviar mensagem
             <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda)</div>
         </a>
         <div id="mensagem5" class="mensagem"></div>
@@ -250,16 +248,16 @@
 
     <!-- Botão 6 (Sem mensagem e botão de copiar) -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link">
-            6º CONTATO – LIGAR PARA O CLIENTE
+        <a href="#" class="link">
+            6º CONTATO – Ligar novamente para o Cliente
             <div class="subtitulo">(Ligar somente se ele não te responder após os 10 minutos)</div>
         </a>
     </div>
 
     <!-- Botão 7 -->
     <div class="link-container">
-        <a href="file:///C:/Users/kitla/OneDrive%20-%20Kit%20Lanche%20Express/7.%20Log%C3%ADstica/2.%20Motoristas/Modelos/Mensagens%20para%20Clientes.html#" class="link" onclick="mostrarMensagemLonga7()">
-            7º CONTATO – ENVIAR MENSAGEM
+        <a href="#" class="link" onclick="mostrarMensagemLonga7()">
+            7º CONTATO – Enviar mensagem
             <div class="subtitulo">(Enviar a mensagem caso o cliente não te atenda avisando que está indo embora e que não pode mais aguardar)</div>
         </a>
         <div id="mensagem7" class="mensagem"></div>
@@ -267,7 +265,5 @@
     </div>
 </div>
 
-
-
-</body></html>
-
+</body>
+</html>
